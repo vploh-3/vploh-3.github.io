@@ -1,26 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Xiao Sui</title>
+  <style>
+    body {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1, h2, h3 {
+      color: #111;
+    }
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .profile {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .profile img {
+      width: 180px;
+      border-radius: 4px;
+    }
+    .section {
+      margin-top: 32px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Xiao Sui</h1>
+  <div class="profile">
+    <img src="profile.jpg" alt="Xiao Sui">
+    <div>
+      <h1>Xiao Sui</h1>
+      <p>
+        Postdoctoral Researcher<br>
+        Institute for Advanced Study, Tsinghua University
+      </p>
+      <p>
+        Email: suixiao AT mail.tsinghua.edu.cn<br>
+        <a href="https://scholar.google.com/citations?user=6HZ3lB0AAAAJ&hl=zh-CN">Google Scholar</a> |
+        <a href="https://dblp.org/">DBLP</a> |
+        <a href="cv.pdf">CV</a>
+      </p>
+    </div>
+  </div>
 
   <p>
-    Postdoctoral Researcher<br>
-    Institute for Advanced Study, Tsinghua University
-  </p>
-
-  <p>
-    Research interests:
+    My research focuses on secure and scalable distributed computation,
+    spanning Byzantine fault tolerance, blockchain systems, multiparty computation,
+    and applied cryptography.
   </p>
 
   <ul>
-    <li>Distributed Systems</li>
-    <li>Byzantine Fault Tolerance</li>
-    <li>Applied Cryptography</li>
+    <li><a href="#bio">Bio</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#service">Professional Service</a></li>
   </ul>
+
+  <div class="section" id="bio">
+    <h3>Short Bio</h3>
+    <p>
+      Dr. Xiao Sui is a postdoctoral researcher at the Institute for Advanced Study,
+      Tsinghua University. She received her Ph.D. in Cyberspace Security from
+      Shandong University in 2024 and her B.A. in Mathematics from Shandong University in 2019.
+    </p>
+  </div>
+
+  <div class="section" id="research">
+    <h3>Research Interests</h3>
+    <ul>
+      <li>Byzantine fault tolerance and distributed consensus</li>
+      <li>Blockchain systems and secure distributed computation</li>
+      <li>Applied cryptography and multiparty computation</li>
+      <li>Composable and provably secure distributed protocols</li>
+    </ul>
+  </div>
+
+  <div class="section" id="publications">
+    <h3>Selected Publications</h3>
+    <ul>
+      <li>
+        Xiao Sui, Sisi Duan. Signature-Free Atomic Broadcast with Optimal O(n²) Messages and O(1) Expected Time. IEEE S&P 2025.
+      </li>
+      <li>
+        Xuanji Meng, Xiao Sui, Zhaoxin Yang, Kang Rong, Wenbo Xu, Shenglong Chen, Ying Yan, Sisi Duan.
+        Rondo: Scalable and Reconfiguration-Friendly Randomness Beacon. NDSS 2025.
+      </li>
+      <li>
+        Sisi Duan, Haibin Zhang, Xiao Sui, Baohan Huang, Changchun Mu, Gang Di, Xiaoyun Wang.
+        Dashing and Star: Byzantine Fault Tolerance with Weak Certificates. EuroSys 2024.
+      </li>
+      <li>
+        Xiao Sui, Sisi Duan, Haibin Zhang.
+        Marlin: Two-Phase BFT with Linearity. DSN 2022.
+      </li>
+    </ul>
+  </div>
+
+  <div class="section" id="service">
+    <h3>Professional Service</h3>
+    <ul>
+      <li>Program Committee Member, ACM CCS 2025–2026, Blockchain and Distributed Systems Track.</li>
+      <li>Reviewer for IEEE TIFS, DCC, and conferences/journals in security and cryptography.</li>
+    </ul>
+  </div>
 </body>
 </html>
